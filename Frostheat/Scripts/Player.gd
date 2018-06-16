@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-var horizontal_speed = 200
-var vertical_speed = 100
+export var horizontal_speed = 200
+export var vertical_speed = 100
 
 var motion = Vector2()
 
@@ -12,7 +12,8 @@ func _process(delta):
 		motion.x = -horizontal_speed
 	else:
 		motion.x = 0
-		
+	pass
+
 func _physics_process(delta):
 	motion.y = -vertical_speed
 	

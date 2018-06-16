@@ -28,6 +28,8 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+horizontal_speed = 200
+vertical_speed = 100
 
 [node name="Sprite" type="Sprite" parent="Player" index="0"]
 
