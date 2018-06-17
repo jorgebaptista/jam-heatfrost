@@ -12,7 +12,6 @@ func _process(delta):
 		motion.x = -horizontal_speed
 	else:
 		motion.x = 0
-	pass
 
 func _physics_process(delta):
 	motion.y = -vertical_speed
