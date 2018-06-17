@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="HeatFrost"
-run/main_scene="res://Scenes/World.tscn"
+run/main_scene="res://Scenes/Start Menu.tscn"
 config/icon="res://icon.png"
 
 [display]
