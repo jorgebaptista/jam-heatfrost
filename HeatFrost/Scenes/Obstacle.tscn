@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32, 32 )
+extents = Vector2( 19.5023, 17.323 )
 
 [node name="Obstacle" type="KinematicBody2D" index="0"]
 
@@ -19,7 +19,6 @@ _sections_unfolded = [ "Collision" ]
 __meta__ = {
 "_edit_group_": true
 }
-vertical_speed = 200
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

@@ -44,7 +44,9 @@ func _physics_process(delta):
 	else:
 		horizontal_speed = 0
 	
-	move_and_collide(horizontal_speed * direction)
+	var collision_info = move_and_collide(horizontal_speed * direction)
+	if collision_info:
+		get_tree().change_scene("res://Scenes/Lose Menu.tscn")
 
 
 

@@ -8,6 +8,9 @@
 
 script/source = "extends Control
 
+func _ready():
+	global.game_is_on = false
+
 func _on_Resume_pressed():
 	get_tree().change_scene(\"res://Scenes/World.tscn\")
 

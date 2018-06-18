@@ -1,56 +1,58 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Scripts/Scenary.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Walls.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Columns.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/Spawner.gd" type="Script" id=7]
-[ext_resource path="res://Scripts/Pause.gd" type="Script" id=8]
-[ext_resource path="res://Sprites/Light.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/World.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Scenary.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Walls.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Columns.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scripts/Spawner.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/Pause.gd" type="Script" id=9]
+[ext_resource path="res://Sprites/Light.png" type="Texture" id=10]
 
 [node name="World" type="Node" index="0"]
 
+script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
 
 [node name="Background" type="Node" parent="." index="0"]
 
 editor/display_folded = true
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
-[node name="Background" parent="Background" index="0" instance=ExtResource( 2 )]
+[node name="Background" parent="Background" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 240, 400 )
 is_initial = true
 
-[node name="Background2" parent="Background" index="1" instance=ExtResource( 2 )]
+[node name="Background2" parent="Background" index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 240, -400 )
 
 [node name="Walls" type="Node" parent="." index="1"]
 
 editor/display_folded = true
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
-[node name="Walls" parent="Walls" index="0" instance=ExtResource( 3 )]
+[node name="Walls" parent="Walls" index="0" instance=ExtResource( 4 )]
 
 position = Vector2( 240, 400 )
 is_initial = true
 
-[node name="Walls2" parent="Walls" index="1" instance=ExtResource( 3 )]
+[node name="Walls2" parent="Walls" index="1" instance=ExtResource( 4 )]
 
 position = Vector2( 240, -400 )
 
-[node name="HUD" parent="." index="2" instance=ExtResource( 4 )]
+[node name="HUD" parent="." index="2" instance=ExtResource( 5 )]
 
 _sections_unfolded = [ "Pause" ]
 
-[node name="Columns" parent="." index="3" instance=ExtResource( 5 )]
+[node name="Columns" parent="." index="3" instance=ExtResource( 6 )]
 
 _sections_unfolded = [ "Pause" ]
 
-[node name="Player" parent="." index="4" instance=ExtResource( 6 )]
+[node name="Player" parent="." index="4" instance=ExtResource( 7 )]
 
 collision_mask = 4
 _sections_unfolded = [ "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
@@ -58,22 +60,22 @@ _sections_unfolded = [ "Collision", "Material", "Pause", "Pickable", "Transform"
 [node name="Spawner" type="Timer" parent="." index="5"]
 
 process_mode = 1
-wait_time = 2.0
+wait_time = 1.0
 one_shot = false
 autostart = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
 [node name="Pause" type="Node" parent="." index="6"]
 
 pause_mode = 2
-script = ExtResource( 8 )
+script = ExtResource( 9 )
 _sections_unfolded = [ "Pause" ]
 
 [node name="Light" type="Sprite" parent="." index="7"]
 
 position = Vector2( 240, 91 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 
 

@@ -4,6 +4,8 @@ var score = 0
 
 var difficulty = 0
 
+var game_is_on = false
+
 func _process(delta):
-	difficulty += 5 * delta
-	print (difficulty)
+	if game_is_on:
+		difficulty += 5 * delta
