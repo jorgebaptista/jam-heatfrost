@@ -1,16 +1,11 @@
 tool extends Label
 
-export (int) var padding_length = 4
-
-var value = 0
-
-func _fixed_update():
-	while value >= 0:
-		value += 1
-	
+func update_score(score_to_add):
+	global.score += score_to_add
+	update()
 
 func _ready():
-    update()
+	update()
 
 func update():
-    $Value.text = ("%0*d" % [value, padding_length])
+	$Value.text = str(global.score)

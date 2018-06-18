@@ -14,6 +14,10 @@ config/name="HeatFrost"
 run/main_scene="res://Scenes/Start Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+global="*res://Scripts/Global.gd"
+
 [display]
 
 window/size/width=480

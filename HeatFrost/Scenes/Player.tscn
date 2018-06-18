@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 position = Vector2( 250, 670 )
 input_pickable = false
@@ -17,7 +17,6 @@ collision_mask = 6
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
-vertical_speed = 0
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

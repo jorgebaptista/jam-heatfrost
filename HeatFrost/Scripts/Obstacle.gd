@@ -13,6 +13,9 @@ var spawn_position = [LF_OBSTACLE_POS,
  					  MD_OBSTACLE_POS,
  				      RT_OBSTACLE_POS]
 
+var score_to_add = 10
+onready var score_text = get_node("/root/World/HUD/Score")
+
 func _ready():
 	position = spawn_position[randi() % spawn_position.size()]
 
@@ -22,3 +25,7 @@ func _physics_process(delta):
 	var collision = move_and_collide(motion * delta)
 	if collision:
 		get_tree().change_scene("res://Scenes/Lose Menu.tscn")
+	
+	if position.y >= 820:
+		score_text.update_score(score_to_add)
+		queue_free()
