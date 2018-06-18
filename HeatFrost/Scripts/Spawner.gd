@@ -7,4 +7,4 @@ func _ready():
 	
 func _on_timeout():
     var item = spawn_item.instance()	
-    get_parent().add_child(item)
+    add_child(item)

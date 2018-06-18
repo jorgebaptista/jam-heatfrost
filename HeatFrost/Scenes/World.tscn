@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Scenary.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scripts/Spawner.gd" type="Script" id=8]
 [ext_resource path="res://Scripts/Pause.gd" type="Script" id=9]
 [ext_resource path="res://Sprites/Light.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Climate.png" type="Texture" id=11]
 
 [node name="World" type="Node" index="0"]
 
@@ -76,6 +77,12 @@ _sections_unfolded = [ "Pause" ]
 
 position = Vector2( 240, 91 )
 texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Climate" type="Sprite" parent="Light" index="0"]
+
+position = Vector2( 0, 309 )
+texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
 
