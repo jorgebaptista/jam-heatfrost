@@ -18,4 +18,4 @@ func _process(delta):
 func _physics_process(delta):
 	motion.y = speed
 	
-	move_and_slide(motion)
+	move_and_collide(motion * delta)
