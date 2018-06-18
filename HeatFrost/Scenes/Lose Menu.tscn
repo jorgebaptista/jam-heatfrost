@@ -142,10 +142,10 @@ _sections_unfolded = [ "Offset", "Z Index" ]
 
 [node name="Score" parent="." index="1" instance=ExtResource( 3 )]
 
-margin_left = 64.0
-margin_top = 96.0
-margin_right = 412.0
-margin_bottom = 232.0
+margin_left = 164.0
+margin_top = 218.0
+margin_right = 304.0
+margin_bottom = 259.0
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Restart" to="." method="_on_Resume_pressed"]
 
