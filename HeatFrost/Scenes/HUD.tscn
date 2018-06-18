@@ -19,9 +19,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -105.5
+margin_left = -156.0
 margin_top = -112.0
-margin_right = 105.5
+margin_right = 55.0
+rect_scale = Vector2( 1.5, 1.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -36,11 +37,11 @@ page = 0.0
 value = 0.0
 exp_edit = false
 rounded = false
-editable = false
+editable = true
 tick_count = 0
 ticks_on_borders = false
 focus_mode = 2
 script = ExtResource( 2 )
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Visibility", "custom_icons", "custom_styles" ]
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_icons", "custom_styles" ]
 
 
