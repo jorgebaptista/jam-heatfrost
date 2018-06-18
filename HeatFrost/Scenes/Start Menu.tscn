@@ -3,6 +3,7 @@
 [ext_resource path="res://Scripts/Start Menu.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/SpecialElite-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Sprites/Background.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Title.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -22,13 +23,6 @@ extra_spacing_top = 10
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
-
-size = 54
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=4]
 
 size = 30
 use_mipmaps = true
@@ -144,46 +138,13 @@ z_index = -1
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
-[node name="TitleContainer" type="MarginContainer" parent="." index="1"]
+[node name="Title" type="Sprite" parent="CenterContainer" index="2"]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 168.0
-margin_right = 480.0
-margin_bottom = 223.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
+position = Vector2( 240, 240 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="Title" type="Label" parent="TitleContainer" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 480.0
-margin_bottom = 55.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
-text = "HeatFrost"
-align = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="ControlsContainer" type="MarginContainer" parent="." index="2"]
+[node name="ControlsContainer" type="MarginContainer" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -216,7 +177,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Controls:
 
 A/Left-Arrow - Move Left
