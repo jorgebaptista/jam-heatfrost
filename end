@@ -1,0 +1,24 @@
+Belz (1):
+      Added background sprites.
+
+Giorgi Beriashvili (8):
+      Added an obstacle generator. Organised file structure.
+      Renamed project correctly to HeatFrost.
+      Renamed GDD correctly.
+      Added a score system which doesn't work as intended yet.
+      Added Start Menu system.
+      Reworked the obstacle spawning system. Reorganised scene tree structure.
+      Changes: Pausing, Lose Menu, updated obstacle generator, reorganisation.
+      Updated score system, obstacles and lose screen. Added a singleton called global.
+
+Jorge Baptista (9):
+      Initial commit
+      Created Godot project and player body with basic input.
+      Organized folders and files inside Frostheat project. Getting to know git a bit more.
+      Changed project settings. Defined camera to start working. Camera resolution set to 480x600
+      Made player script variables visible in inspector.
+      Renamed project, created and finished (first version) GDD
+      Added initial camera scrolling.
+      Finished player movement (without animations)
+      Implemented temperature bar(slider) feature, needs tweaking with future sprite.
+

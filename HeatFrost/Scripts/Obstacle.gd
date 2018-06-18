@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var vertical_speed = 200
+var speed = 300
 
 var motion = Vector2()
 
@@ -18,9 +18,10 @@ onready var score_text = get_node("/root/World/HUD/Score")
 
 func _ready():
 	position = spawn_position[randi() % spawn_position.size()]
+	
 
 func _physics_process(delta):
-	motion.y = vertical_speed
+	motion.y = speed + global.difficulty
 
 	var collision = move_and_collide(motion * delta)
 	if collision:
