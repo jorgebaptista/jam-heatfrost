@@ -1,19 +1,47 @@
 extends KinematicBody2D
 
-export var horizontal_speed = 200
-export var vertical_speed = 100
+var direction = Vector2()
 
+const RIGHT = Vector2(130, 0)
+const LEFT = Vector2(-130, 0)
+
+var horizontal_speed = 0
+
+export var vertical_speed = 100
 var motion = Vector2()
 
-func _process(delta):
-	if Input.is_action_pressed("ui_right"):
-		motion.x = horizontal_speed
-	elif Input.is_action_pressed("ui_left"):
-		motion.x = -horizontal_speed
-	else:
-		motion.x = 0
+enum COLUMN_POSITION{LEFT_COLUMN, MIDDLE_COLUMN, RIGHT_COLUMN}
+var current_column = COLUMN_POSITION.MIDDLE_COLUMN
 
 func _physics_process(delta):
-	motion.y = -vertical_speed
 	
-	motion = move_and_slide(motion)
+	if Input.is_action_just_pressed("ui_right") and current_column != RIGHT_COLUMN:
+		horizontal_speed = 1
+		direction = RIGHT
+		
+		if current_column == LEFT_COLUMN:
+			current_column = MIDDLE_COLUMN
+		elif current_column == MIDDLE_COLUMN:
+			current_column = RIGHT_COLUMN
+		
+	elif Input.is_action_just_pressed("ui_left") and current_column != LEFT_COLUMN:
+		horizontal_speed = 1
+		direction = LEFT
+		
+		if current_column == RIGHT_COLUMN:
+			current_column = MIDDLE_COLUMN
+		elif current_column == MIDDLE_COLUMN:
+			current_column = LEFT_COLUMN
+		
+	else:
+		horizontal_speed = 0
+	
+	move_and_collide(horizontal_speed * direction)	
+	
+	motion.y = -vertical_speed
+	move_and_slide(motion)
+
+
+
+
+
