@@ -29,4 +29,5 @@ func _physics_process(delta):
 	
 	if position.y >= 820:
 		score_text.update_score(score_to_add)
+		global.increase_difficulty()
 		queue_free()

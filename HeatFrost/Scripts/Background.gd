@@ -11,7 +11,7 @@ func _ready():
 		position = Vector2(240, -400)
 
 func _process(delta):
-	if position.y >= 1195:
+	if position.y >= 1199:
 		get_parent().spawn_background()
 		queue_free()
 
