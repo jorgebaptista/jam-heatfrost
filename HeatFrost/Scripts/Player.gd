@@ -15,9 +15,9 @@ onready var temp_slider = get_node("/root/World/HUD/Temp_Slider")
 
 func _process(delta):
 	if current_column == LEFT_COLUMN:
-		temperature += delta * -10
+		temperature += delta * -30
 	elif current_column == RIGHT_COLUMN:
-		temperature += delta * 10 
+		temperature += delta * 30
 	
 	temp_slider.update_slider(temperature)
 
