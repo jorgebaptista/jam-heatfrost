@@ -1,5 +1,5 @@
 # godot-jam-06-2018
-Our project submission for the "Godot Community Game Jam - June 2018" - https://itch.io/jam/godotjam062018/rate/269920#post-448873
+Our project submission "HeatFrost" for the "Godot Community Game Jam - June 2018" - https://itch.io/jam/godotjam062018/rate/269920#post-448873
 
 Game page - https://belz.itch.io/heatfrost
 
