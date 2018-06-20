@@ -4,14 +4,14 @@ Our project submission ["HeatFrost"](https://belz.itch.io/heatfrost) for the ["G
 
 ## Feedback
 
-* Play our game and download it on [itch.io page](https://belz.itch.io/heatfrost).
+* Play and download our game on [itch.io page](https://belz.itch.io/heatfrost).
 * Rate it in our [submission page](https://itch.io/jam/godotjam062018/rate/269920#post-448873).
 * Comment and tell us what you think!
 
 ## Game Developed by:
 
-* Giorgi Beriashvili
-* Jorge Baptista
+* [Giorgi Beriashvili](https://github.com/0rganic)
+* [Jorge Baptista](https://github.com/Belz)
 
 ## Credits:
 
