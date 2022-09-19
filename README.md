@@ -14,7 +14,7 @@ Our project submission ["HeatFrost"](https://belz.itch.io/heatfrost) for the ["G
 
 ## Game Developed by:
 
-* [Giorgi Beriashvili](https://github.com/0rganic)
+* [Giorgi Beriashvili](https://github.com/GiorgiBeriashvili)
 * [Jorge Baptista](https://github.com/Belz)
 
 ## Credits:
